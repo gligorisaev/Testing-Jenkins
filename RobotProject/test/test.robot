@@ -1,15 +1,19 @@
 *** Settings ***
 Library    SSHLibrary
 Library    CryptoLibrary    variable_decryption=True
+Library    OperatingSystem
 Suite Setup            Open Connection And Log In
 Suite Teardown         SSHLibrary.Close All Connections
 
 *** Variables ***
 ${HOST}            192.168.1.130   
 ${USERNAME}        pi
-${PASSWORD}        crypt:LO3wCxZPltyviM8gEyBkRylToqtWm+hvq9mMVEPxtn0BXB65v/5wxUu7EqicpOgGhgNZVgFjY0o=
+${PASSWORD}        crypt:x890wZWbaKGFohMJzvB9OzE9roBpUnVf82D4GLK/vTpPOpjKil0SBXMwSJs0Y/cR6OffBVJFBYk=
 
 *** Test Cases ***
+
+Change user
+    Run    command
 Test Cases
     ${output}=    Execute Command   uname -m
     Log    ${output}
