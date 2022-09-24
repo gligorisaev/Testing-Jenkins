@@ -8,7 +8,7 @@ Suite Teardown         SSHLibrary.Close All Connections
 *** Variables ***
 ${HOST}            192.168.1.130   
 ${USERNAME}        pi
-${PASSWORD}        crypt:pm0d5ygXLzmnak3qYiRpxC79LRzigzfxtxnwavrE9HRKQXxOtbFL6JT6QJ3RcJ7pOUZnrxJVo3g=
+${PASSWORD}        crypt:CCvjx4iVAQoyE8hOPC5f5wzH5GW8vux4lFh/EVbwTEHW6yz/foYyog3R61MbfbhPTauain8KqnA=
 
 *** Test Cases ***
 
